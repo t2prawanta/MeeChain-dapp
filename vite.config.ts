@@ -11,8 +11,6 @@ export default defineConfig({
  await import("@replit/vite-plugin-cartographer").then((m) => m.cartographer(),),]
 ],
   server: {
-    fs: {
-        resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
       "@shared": path.resolve(import.meta.dirname, "shared"),
